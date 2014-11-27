@@ -1,9 +1,11 @@
 $(document).ready(function(){
 	$('.ryu').mouseenter(function() {
+		//Goes into to ready mode
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
 	})
 	.mouseleave(function() {
+		//Goes back to being still
 		$('.ryu-ready').hide();
 		$('.ryu-still').show();
 	})
@@ -12,6 +14,7 @@ $(document).ready(function(){
 		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
 		$('.hadouken').finish().show()
+		//Shoots Hadouken across the screen
 		.animate(
 			{'left': '300px'}, 500, function() {
 				$(this).hide();
@@ -21,12 +24,12 @@ $(document).ready(function(){
 	})
 	.mouseup(function(){
 		//ryu goes back to the ready position
-		console.log('mouse up');
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 		$('.hadouken').hide();
 	})
 })
+
 
 function playHadouken() {
 	$('#hadouken-sound')[0].volume - 0.5;
