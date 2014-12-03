@@ -53,3 +53,17 @@ body {
 	display: none;
 	float: left;
 }
+
+.instructions {
+	font-family: Verdana; ;
+	font-weight: bold;
+	position: absolute;
+	list-style: none;
+	top: 260px;
+	left: 800px;
+}
+
+.instructions ul {
+	padding: 15px;
+	font-size: 24px;
+}

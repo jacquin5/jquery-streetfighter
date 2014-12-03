@@ -28,20 +28,22 @@ $(document).ready(function(){
 		$('.ryu-ready').show();
 		$('.hadouken').hide();
 	});
-	$('body').on('keydown', function(event){
-		if (event.which==88) {
-			$('.ryu-still').hide();
-			$('.ryu-ready').hide();
-			$('.ryu-cool').show();
-		}
-	})
 
-		.on('keyup', function(event) {
-			if (event.which==88) {
-				$('.ryu-cool').hide();
-				$('.ryu-still').show();
-			}
-		})
+	$('body').on('keydown', function(event){
+if (event.which==88) {
+$('.ryu-still').hide();
+$('.ryu-ready').hide();
+$('.ryu-cool').show();
+}
+})
+
+.on('keyup', function(event) {
+if (event.which==88) {
+	$('.ryu-cool').hide();
+	$('.ryu-still').show();
+}
+})
+	
 })
 
 
